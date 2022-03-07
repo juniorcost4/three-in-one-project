@@ -14,6 +14,8 @@ import { HobbyModule } from 'src/hobby/hobby.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       autoSchemaFile: 'schema.gql',
+      debug: false,
+      playground: false,
     }),
     PersonModule,
     HobbyModule,
